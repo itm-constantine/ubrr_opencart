@@ -166,6 +166,7 @@ class ControllerPaymentubrir extends Controller {
             case 'DECLINED':
             echo '<meta charset="utf-8">';
             echo "<h2>Оплата отклонена банком <a href=http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).">вернуться в магазин</a></h2>";
+            echo (string)$parse_it->ResponseDescription;
             break;
           }
         }
