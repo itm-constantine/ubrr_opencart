@@ -755,7 +755,7 @@
             <!-- Uni login -->
             <tr>
               <td>Логин личного кабинета MasterCard</td>
-              <td><input type="text" name="entry_uniteller_login" value="<?php echo $entry_uniteller_login; ?>" size="10" /></td> 
+              <td><input type="text" name="entry_uniteller_login" value="<?php echo $entry_uniteller_login; ?>" size="16" /></td> 
             </tr>
             <!-- Uni pass -->
             <tr>
@@ -769,8 +769,8 @@
             </tr>
         </table>
       <!-- Uniteller статистика платежей -->
-      <input type="text" name="unilogin" id="unilogin" value="<?php echo trim($this->config->get('entry_uniteller_login')) ?>" placeholder="логин" size="8">
-      <input type="text" name="unipass" id="unipass" value="<?php echo trim($this->config->get('entry_uniteller_user_pass')) ?>" placeholder="пароль" size="8">
+      <input hidden="hidden" type="text" name="unilogin" id="unilogin" value="<?php echo trim($this->config->get('entry_uniteller_login')) ?>" placeholder="логин" size="8">
+      <input hidden="hidden" type="text" name="unipass" id="unipass" value="<?php echo trim($this->config->get('entry_uniteller_user_pass')) ?>" placeholder="пароль" size="8">
       <input type="button" id="unijournalbutton" value="Журнал операций MasterCard">
       <input type="button" onclick="jQuery('#callback').toggle()" value="Написать в банк">
       <div id="callback" style="display: none;">
